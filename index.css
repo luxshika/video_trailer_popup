@@ -1,0 +1,94 @@
+body{
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: cursive;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: black;
+}
+.main-container{
+  max-width: 1550px;
+  padding: 15px;
+
+}
+.main-container img{
+  max-width: 100%;
+  margin-bottom:15px ;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+.main-container h1{
+  color: rgb(33, 124, 177);
+  font-size: 2em;
+  font-weight: 500;
+  font-family: cursive;
+}
+.main-container p{
+   color: white;
+   font-family: 20px;
+   margin: 15px 0px;
+
+}
+.btn{
+  background-color: blue;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  
+}
+.btn:hover{
+  background-color: rgb(38, 142, 211);
+}
+.video-container{
+  position: fixed;
+
+ top:30%;
+ right: 50%;
+ padding: -100px;
+ left: 50%;
+ bottom: 50%;
+  transform: translate(-50%,-50%);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.video-container video{
+  position: relative;
+  max-width: 1000px;
+  max-height: 500px;
+  outline: none;
+  padding-top: 10px;
+  display: flex;
+  justify-content:end;
+
+}
+
+  
+
+
+
+@media (max-width:991px){
+  .video-container video{
+    max-width: 90%;
+  }
+}
+
+.active.video-container{
+  visibility: hidden;
+}
+.close-icon{
+    display: flex;
+    align-items: center;
+    color: white;
+    top:20px;
+}
